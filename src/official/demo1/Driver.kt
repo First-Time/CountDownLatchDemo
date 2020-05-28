@@ -10,7 +10,6 @@ fun main() {
     }
     println("doSomethingElse")
     startSignal.countDown()
-    println("alsoDoSomethingElse")
     for (i in 1..10000) {
         println("alsoDoSomethingElse")
     }
