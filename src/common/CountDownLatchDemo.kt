@@ -3,6 +3,11 @@ package common
 import java.util.concurrent.CountDownLatch
 import java.util.concurrent.Executors
 
+/**
+ * 在主线程中调用await
+ *
+ * 主线程等待子线程执行完成
+ */
 class CountDownLatchDemo {
     fun test() {
         val latch = CountDownLatch(2)

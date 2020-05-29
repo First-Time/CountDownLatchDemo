@@ -12,6 +12,7 @@ class WorkerRunnable : Runnable {
     }
 
     override fun run() {
+        println("子线程doSomething")
         doWork(i)
         doneSignal.countDown()
     }
